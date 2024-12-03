@@ -1,0 +1,100 @@
+body{
+    margin: 0px;
+    font-family: "Carter One";
+    background-color: rgb(196, 30, 17);
+}
+
+nav{
+    margin: 8px;
+}
+
+.menu{
+    height: 48px;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+.menu:hover{
+    cursor: pointer;
+}
+
+.menuX{
+    height: 48px;
+    padding-left: 348px;
+    padding-top: 8px;
+}
+
+.menuX:hover{
+    cursor: pointer;
+}
+
+.menuContent {
+    background-color: rgb(255, 219, 31);
+    width: 400px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1000ms ease;
+}
+
+table{
+    border: solid 5px rgb(196, 30, 17);
+    border-radius: 15px;
+    margin: 8px;
+}
+
+tr{
+    border: solid 3px rgb(196, 30, 17);
+}
+
+th{
+    font-size: 18px;
+    color: rgb(196, 30, 17);
+}
+
+td{
+    color: rgb(196, 30, 17);
+}
+
+th, td {
+    padding: 5px;
+  }
+
+header{
+    text-align: center;
+}
+
+h1{
+    font-size: 72px;
+    color: rgb(255, 219, 31);
+}
+
+h2{
+    font-size: 56px;
+    color: rgb(255, 219, 31);
+}
+
+h3{
+    color: rgb(196, 30, 17);
+    text-align: center;
+    font-size: 28px;
+    margin: 0px;
+}
+
+.imgArea{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonArea{
+    display: flex;
+    justify-content: center;
+}
+
+.menuContent.show {
+    visibility: visible; /* Sichtbar, wenn die Klasse 'show' hinzugefügt wird */
+    opacity: 1; /* Voll sichtbar */
+}
