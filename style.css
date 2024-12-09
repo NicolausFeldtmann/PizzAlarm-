@@ -170,6 +170,11 @@ p:active{
 }
 
 @media(max-width: 430px) {
+    .buttonArea{
+        flex-direction: column;
+        align-items: center;
+    }
+
     h1{
         font-size: 54px;
     }
@@ -184,6 +189,7 @@ p:active{
 
     p{
         font-size: 12px;
+        width: fit-content;
     }
 
     .menuContent{
@@ -192,5 +198,12 @@ p:active{
 
     th{
         font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    th{
+        font-size: 10px;
+        padding:6px;
     }
 }
