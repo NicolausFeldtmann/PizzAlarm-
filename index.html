@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" type="img/png" sizes="32x32" href="./assets/img/icon-512x512.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Handjet:wght@100..900&family=Titan+One&display=swap" rel="stylesheet">
@@ -11,10 +13,13 @@
     <title>PizzAlarm!</title>
 </head>
 <body>
-    <nav><img class="menu" onclick="showMenu()" src="./assets/img/menu.png"></nav>
+    <nav>
+        <img class="menu" onclick="showMenu()" src="./assets/img/menu.jpg"></nav>
         <div class="menuContent" id="menuShow">
-            <img class="menuX" onclick="showMenu()" src="./assets/img/x.png.png">
-
+            <div class="side">
+                <h5 onclick="addFiveMinutes()">Ofen nicht vorgeheizt!</h5>
+                <img class="menuX" onclick="showMenu()" src="./assets/img/x.png.png">
+            </div>
             <h3>Ober- Unterhitze:</h3>
 
             <table>

@@ -29,7 +29,8 @@ function startTimer() {
                 seconds = seconds < 10 ? '0' + seconds : seconds; 
                 document.getElementById('timer').innerHTML = minutes + ':' + seconds; 
             } else {
-                clearInterval(timerInterval); 
+                clearInterval(timerInterval);
+                alarm.loop = true; 
                 alarm.play();
                 document.getElementById('timer').innerHTML = '00:00'; 
             }
@@ -74,3 +75,18 @@ document.getElementById('startButton').addEventListener('click', function() {
         alert('Bitte wählen Sie eine Zeit aus.');
     }
 });
+
+function addFiveMinutes() {
+    timeLeft += 5 * 60 * 1000;
+    updateTimerDisplay();
+}
+
+function updateTimerDisplay() {
+    if (timeLeft >= 0) {
+        let minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+        let seconds = Math.floor((timeLeft / 1000) % 60);
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+        document.getElementById('timer').innerHTML = minutes + ':' + seconds;
+    }
+}
