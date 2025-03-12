@@ -182,8 +182,8 @@ p:active{
 }
 
 .menuContent.show {
-    visibility: visible; /* Sichtbar, wenn die Klasse 'show' hinzugefügt wird */
-    opacity: 1; /* Voll sichtbar */
+    visibility: visible; 
+    opacity: 1; 
 }
 
 ::-webkit-scrollbar{
@@ -248,5 +248,23 @@ p:active{
 
     .menuContent{
         width: 300pxS;
+    }
+}
+
+@media (max-height: 700px) {
+    
+    .imgArea{
+        height: 112px;
+    }
+
+    .timerArea{
+        font-size: 48px;
+    }
+}
+
+@media (max-height: 528px) {
+
+    h1{
+        font-size: 32px;
     }
 }

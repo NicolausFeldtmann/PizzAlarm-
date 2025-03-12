@@ -61,6 +61,11 @@ function stopTimer() {
     if (timerStartet) {
         clearInterval(timerInterval);
         timerStartet = false; 
+        alarm.pause(); // Stoppt den Alarm
+        alarm.currentTime = 0; // Setzt den Alarm zurück
+    } else if (timeLeft === 0) {
+        alarm.pause(); // Stoppt den Alarm
+        alarm.currentTime = 0; // Setzt den Alarm zurück
     } else {
         startTimer(); 
     }
